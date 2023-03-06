@@ -1,14 +1,20 @@
-import sys
-# 讀取輸入
-str = sys.stdin.readline()
-n = int(sys.stdin.readline())
+#include <iostream>
+#include <string>
+using namespace std;
 
-# 創建一個空列表來存儲數列中的元素
-result = []
-for i in range(n):
-    num = sys.stdin.readline()
-    result.append(num)
-
-# 使用 join 方法將數列中的元素與 str 組合起來
-output = str.join(result)
-print(result)
+int main() {
+    string str;
+    cin >> str;
+    int N;
+    cin >> N;
+    for (int i = 0; i < N; i++) {
+        int num;
+        cin >> num;
+        cout << num;
+        if (i != N - 1) {
+            cout << str;
+        }
+    }
+    cout << endl;
+    return 0;
+}
